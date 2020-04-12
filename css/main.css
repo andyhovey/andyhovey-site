@@ -1,8 +1,5 @@
 body {
-	background-image: linear-gradient(#FFF6E4, #FFEECC);
-	height: 100vh;
-	background-color: #FFEECC;
-	background-repeat: no-repeat;
+	background: #FFF6E4;
 	color: #24231F;
 	font-size: 24px;
 	line-height: 167%;
@@ -63,8 +60,10 @@ a {
 
 
 /* responsive styles */
-@media only screen and (max-width: 800px) {
-	  body {
+@media only screen and (max-width: 500px) {
+	  body, h1 {
+	  	font-size: 18px;
+
 	}
 
 }
