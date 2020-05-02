@@ -9,6 +9,18 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+.rectangle {
+	width: 14px;
+	height: 14px;
+	border: 2px solid #F23535;
+	transform: rotate(45deg);
+	border-radius: 3px;
+	position: fixed;
+	left: 250px;
+	top: 50px;
+	z-index: 1000;
+}
+
 @font-face {
   	font-family: 'sohne-book';
   	src: url('../fonts/SohneWeb-Mager.woff2') format('woff2');
