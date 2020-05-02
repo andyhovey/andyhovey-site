@@ -118,4 +118,62 @@ h2 {
 
 }
 
+/* sticky / scroll animation */
+
+.andy, .hovey, .h, .a, .y2, .y1, .n, .d, .o {
+	position: sticky;
+	display: inline-block;
+	top: 15px;
+	vertical-align: top;
+	margin-bottom: 70px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-left: 0;
+}
+
+.a, .d {
+	margin-top: 40px;
+}
+
+.andy {
+	margin-top: 0px;
+}
+
+.o {
+	margin-top: 120px;
+}
+
+.h {
+	margin-top: 120px;
+}
+
+.y1 {
+	margin-top: 80px;
+}
+
+.y2 {
+	margin-top: 120px;
+}
+
+.hovey {
+	margin-top: 80px;
+}
+ 
+.animation-wrapper {
+	top: 0;
+}
+
+.top-mask {
+	width: 100%;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	height: 80px;
+	background: #F4E9D5;
+	z-index: 0;
+}
+
+
+
+
 
