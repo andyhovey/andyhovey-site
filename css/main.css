@@ -1,8 +1,8 @@
 body {
 	background: #F4E9D5;
 	color: #24231F;
-	font-size: 24px;
-	line-height: 167%;
+	font-size: 23px;
+	line-height: 150%;
 	font-family: "sohne-book", helvetica, arial, sans-serif;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
@@ -29,7 +29,7 @@ body {
 }
 
 .text p {
-	max-width: 780px;
+	max-width: 700px;
 }
 
 .photo-wrapper {
@@ -67,7 +67,7 @@ p {
 
 h1 {
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 23px;
 	padding-top: 17%;
 	margin: 3% 0 2% 0; 
 }
