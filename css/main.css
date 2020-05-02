@@ -16,12 +16,6 @@ body {
 }
 
 @font-face {
-  	font-family: 'sohne-bold';
-  	src: url('../fonts/SohneWeb-Halbfett.woff2') format('woff2');
-  	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
-}
-
-@font-face {
   	font-family: 'tiempos-headline';
   	src: url('../fonts/TiemposHeadline-Medium.woff') format('woff');
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */

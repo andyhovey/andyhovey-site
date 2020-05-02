@@ -31,15 +31,13 @@ body {
 	max-width: 1400px;
 	margin: auto;
 	display: grid;
-  	grid-template-columns: 45% 55%;
-  	padding: 3%;
+  	grid-template-columns: 47% 53%;
+  	padding: 2%;
 }
 
 .left {
 	grid-column: 1 / 2;
 	padding: 2%;
-  	margin-top: 14%;
-
 }
 
 .right {
@@ -66,7 +64,7 @@ body {
 	color: white;
 	position: relative;
 	left: 15px;
-	bottom: 36px;
+	bottom: 38px;
 }
 
 .text p:last-child {
@@ -88,7 +86,7 @@ h2 {
 	font-size: 60px;
 	line-height: 125%;
 	font-weight: normal;
-	margin: 10% 0 0 0;
+	margin: 0 0 6% 0;
 	padding: 0;
  }
 
@@ -120,8 +118,6 @@ h2 {
 		margin-top: 2.3%;
 		margin-bottom: 5%;
 	}
-
-
 }
 
 /* sticky / scroll animation */
@@ -137,50 +133,23 @@ h2 {
 	font-family: sohne-bold;
 }
 
-.a {
-	margin-top: 40px;
-}
+.a { margin-top: 0px; }
 
-.n {
-	margin-top: 20px;
-}
+.n { margin-top: 25px; }
 
-.d {
-	margin-top: 0px;
-}
+.d { margin-top: 0px; }
 
-.o {
-	margin-top: 40px;
-}
+.y1 { margin-top: 50px; }
 
-.e {
-	margin-top: 00px;
-}
+.h { margin-top: 75px; }
 
-.v {
-	margin-top: 20px;
-}
+.o { margin-top: 25px; }
 
-.h {
-	margin-top: 60px;
-}
+.v { margin-top: 0px; }
 
-.y1 {
-	margin-top: 40px;
-}
+.e { margin-top: 25px; }
 
-.y2 {
-	margin-top: 40px;
-}
-
-.hovey {
-	margin-top: 80px;
-}
- 
-.animation-wrapper {
-	top: 0;
-}
-
+.y2 { margin-top: 50px; }
 
 
 
