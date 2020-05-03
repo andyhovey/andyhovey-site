@@ -92,7 +92,7 @@ h2 {
 
 /* sticky / scroll animation */
 
-.a, .n, .d, .y1, .h, .o, .v, .e, .y2 {
+.a, .n, .d, .y1, .h, .o, .v, .e, .y2, .y3 {
 	position: sticky;
 	display: inline-block;
 	top: 20px;
@@ -120,6 +120,8 @@ h2 {
 .e { margin-top: 25px; }
 
 .y2 { margin-top: 50px; }
+
+.y3 { margin-top: 0px; }
 
 
 
