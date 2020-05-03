@@ -16,26 +16,37 @@ body {
 }
 
 @font-face {
+  	font-family: 'sohne-bold';
+  	src: url('../fonts/SohneWeb-Halbfett.woff2') format('woff2');
+  	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
+}
+
+@font-face {
   	font-family: 'tiempos-headline';
   	src: url('../fonts/TiemposHeadline-Medium.woff') format('woff');
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
 }
 
-.text {
+.grid-continer {
 	max-width: 1400px;
-	width: 87%;
-	padding: 0 5%;
-	margin: auto
+	margin: auto;
+	display: grid;
+  	grid-template-columns: 47% 53%;
+  	padding: 2%;
 }
 
-.text p {
-	max-width: 700px;
+.left {
+	grid-column: 1 / 2;
+	padding: 2.5% 2% 2% 2%;
 }
 
-.photo-wrapper {
-	max-width: 1400px;
-	width: 87%;
-	margin: 0 auto 4% auto;
+.right {
+	grid-column: 2 / 3;
+	padding: 2%;
+}
+
+.full-width {
+	grid-column: 1 / 3;
 }
 
 .photo 	{
@@ -45,6 +56,7 @@ body {
     width: 100%;
     height: 0;
     padding-top: 75%; /* (img-height / img-width * container-width) */
+    max-width: 1400px;
 }
 
 .caption {
@@ -52,7 +64,7 @@ body {
 	color: white;
 	position: relative;
 	left: 15px;
-	bottom: 40px;
+	bottom: 38px;
 }
 
 .text p:last-child {
@@ -61,15 +73,8 @@ body {
 
 /* text styles */
 p {
-	margin: 2.5% 0;
+	margin: 3% 0;
 	padding: 0;
-}
-
-h1 {
-	font-weight: normal;
-	font-size: 23px;
-	padding-top: 17%;
-	margin: 3% 0 2% 0; 
 }
 
 a {
@@ -78,112 +83,88 @@ a {
 
 h2 { 
 	font-family: tiempos-headline;
-	font-size: 75px;
+	font-size: 60px;
 	line-height: 125%;
 	font-weight: normal;
-	max-width: 1100px;
-	margin: 0;
+	margin: 0 0 6% 0;
 	padding: 0;
  }
 
-
- /* two column layout */
-.text-two-column p {
-	margin-left: 50%;
-}
-
-
-
- /* two column layout */
-
-
-
-/* responsive styles */
-@media only screen and (max-width: 800px) {
-	  body, h1 {
-	  	font-size: 18px;
-	}
-
-	.caption {
-		bottom: 36px;
-	}
-
-	.photo 	{
-		background-image: url(../images/peru-huayhuash-24-june-2016-small.jpg);
-	}
-
-	h2 {
-		font-size: 30px;
-		margin: 15px 0;
-	}
-
-	p {
-		margin: 15px 0;
-	}
-
-	.photo-wrapper {
-		margin-top: 2.3%;
-		margin-bottom: 5%;
-	}
-
-
-}
-
 /* sticky / scroll animation */
 
-.andy, .hovey, .h, .a, .y2, .y1, .n, .d, .o {
+.a, .n, .d, .y1, .h, .o, .v, .e, .y2, .y3 {
 	position: sticky;
 	display: inline-block;
-	top: 15px;
+	top: 20px;
 	vertical-align: top;
-	margin-bottom: 70px;
 	font-size: 18px;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 	margin-left: 0;
 	font-family: sohne-bold;
 }
 
-.a, .d {
-	margin-top: 40px;
+.a { margin-top: 50px; }
+
+.n { margin-top: 25px; }
+
+.d { margin-top: 0px; }
+
+.y1 { margin-top: 25px; }
+
+.h { margin-top: 50px; }
+
+.o { margin-top: 75px; }
+
+.v { margin-top: 50px; }
+
+.e { margin-top: 25px; }
+
+.y2 { margin-top: 50px; }
+
+.y3 { margin-top: 0px; }
+
+
+
+/* responsive styles */
+@media only screen and (max-width: 1000px) {
+	  body {
+	  	font-size: 18px;
+	}
+
+	.photo 	{ background-image: url(../images/peru-huayhuash-24-june-2016-small.jpg); }
+
+	h2 {
+		font-size: 35px;
+	}
+
+	p { margin: 15px 0; }
+
+
+	.grid-continer {
+		margin: auto;
+		display: grid;
+	  	grid-template-columns: 47% 53%;
+	  	padding: 2%;
+	}
+
+	.a, .n, .d, .y1, .h, .o, .v, .e, .y2, .y3 {
+		font-size: 15px;
+	}
+
 }
 
-.andy {
-	margin-top: 0px;
-}
+@media only screen and (max-width: 700px) {
 
-.o {
-	margin-top: 100px;
-}
+	.a, .n, .d, .y1, .h, .o, .v, .e, .y2, .y3 {
+		font-size: 15px;
+	}
 
-.h {
-	margin-top: 120px;
+	.left, .right, .full-width {
+		grid-column: 1 / 3;
+		padding: 1.5%;
+	}
+		  
 }
-
-.y1 {
-	margin-top: 80px;
-}
-
-.y2 {
-	margin-top: 120px;
-}
-
-.hovey {
-	margin-top: 80px;
-}
- 
-.animation-wrapper {
-	top: 0;
-}
-
-/*.top-mask {
-	width: 100%;
-	position: sticky;
-	top: 0px;
-	left: 0px;
-	height: 80px;
-	background: #F4E9D5;
-	z-index: 0;
-}*/
 
 
 
