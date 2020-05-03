@@ -23,7 +23,7 @@ body {
 
 @font-face {
   	font-family: 'tiempos-headline';
-  	src: url('../fonts/TiemposHeadline-Medium.woff') format('woff');
+  	src: url('../fonts/TiemposHeadWeb-Semibold.woff') format('woff');
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
 }
 
