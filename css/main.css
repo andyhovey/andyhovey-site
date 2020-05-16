@@ -17,6 +17,12 @@ body {
 }
 
 @font-face {
+  	font-family: 'sohne-bold';
+  	src: url('../fonts/SohneWeb-Halbfett.woff2') format('woff2');
+  	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
+}
+
+@font-face {
   	font-family: 'sohne-book-italic';
   	src: url('../fonts/SohneWeb-MagerKursiv.woff2') format('woff2');
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
@@ -68,6 +74,11 @@ h2 {
 
  .work-text p {
  	margin: 11px 0;
+ }
+
+ h3 {
+ 	font-family: sohne-bold;
+ 	font-weight: normal;
  }
 
  .work-text h3 {
