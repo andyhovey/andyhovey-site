@@ -66,6 +66,10 @@ h2 {
  	color: #fff;
  }
 
+ .work-text p {
+ 	margin: 11px 0;
+ }
+
  .work-text h3 {
  	margin: -7px 0px 0px 0px;
  }
@@ -79,6 +83,10 @@ h2 {
 	margin-bottom: 9.5%;
 }
 
+.contact-details a {
+	color: #6D6C69;
+}
+
 .contact-details h3 {
 	margin: 17px 0;
 	line-height: 90%
@@ -86,7 +94,7 @@ h2 {
 
 .contact-details li {
 	line-height: 90%;
-	margin-bottom: 8px;
+	margin-bottom: 9px;
 }
 
 .contact-details li:last-child {
