@@ -1,7 +1,7 @@
 body {
 	background: #F4E9D5;
 	color: #24231F;
-	font-size: 22px;
+	font-size: 21px;
 	line-height: 145%;
 	font-family: "sohne-book", helvetica, arial, sans-serif;
 	font-weight: normal;
@@ -22,7 +22,6 @@ body {
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
 }
 
-
 /* text styles */
 h1 {
 	font-weight: normal;
@@ -37,23 +36,55 @@ a {
 
 h2 { 
 	font-family: tiempos-headline;
-	font-size: 60px;
+	font-size: 4.3vw;
 	line-height: 120%;
 	font-weight: normal;
-	margin: 0;
+	margin: 0 0 4% 0;
 	padding: 0;
  }
 
- h3 {
- 	margin: -7px 10px 0px 0px;
- }
-
- .work-text, h3 {
+ .smaller-text, .smaller-text > * {
  	font-size: 16px;
- 	color: #fff;
- 	line-height: 150%;
+ 	line-height: 145%;
  }
 
+ .work-text {
+ 	color: #fff;
+ }
+
+ .work-text h3 {
+ 	margin: -7px 0px 0px 0px;
+ }
+
+.contact-details {
+	border-left: 1px solid #D3C8B4;
+	padding-left: 15px;
+	color: #6D6C69;
+	position: sticky;
+	top: 5%;
+	margin-bottom: 11%;
+}
+
+.contact-details h3 {
+	margin: 17px 0;
+	line-height: 90%
+}
+
+.contact-details li {
+	line-height: 90%;
+	margin-bottom: 8px;
+}
+
+.contact-details li:last-child {
+	margin-bottom: 0;
+}
+
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
 
  /* text styles end */
  img {
@@ -76,7 +107,7 @@ h2 {
  }
 
  .yellow {
- 	background: #FCD87D;
+ 	background: #252F3E;
  }
 
  .black {
@@ -87,55 +118,65 @@ h2 {
  	color: #fff;
  }
 
-.grid-eight-col {
+.grid-twelve-col {
 	display: grid;
-	grid-template-columns: 10.75% 10.75% 10.75% 10.75% 10.75% 10.75% 10.75% 10.75%;
+	grid-template-columns: 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5%;
     column-gap: 2%;
     width: 96%;
 	max-width: 1400px;
 	margin: auto;
 }
 
-.one-three { grid-column: 1 / 3; }
+/* for three column images */
+.one-four { grid-column: 1 / 4; }
 
-.one-seven { grid-column: 1 / 7; }
+.four-seven { grid-column: 4 / 7; }
 
-.one-nine { grid-column: 1 / 9; }
+.seven-ten { grid-column: 7 / 10; }
+/* for three column images */
 
-.seven-nine { grid-column: 7 / 9; }
+.one-ten { grid-column: 1 / 10; }  /* big images */
 
-.two-seven { grid-column: 2 / 7; }
+.ten-thirteen { grid-column: 10 / 13; }  /* right column text */
 
-.two-seven h2, .two-seven p {
-	max-width: 670px;
+.two-eight { grid-column: 2 / 8; } /* left column text */
+
+.five-vertical-padding {
+	padding: 5% 0%;
 }
 
-
-.big-vertical-padding {
+.six-vertical-padding {
 	padding: 6% 0%;
 }
 
 .vertical-padding-bottom {
 	padding-bottom: 6%;
-
 }
  /* layout styles end */
 
-.photo img {
+
+img {
 	border-radius: 3px;
 }
-
 
 /* responsive styles */
 
 @media only screen and (max-width: 1100px) {
-	.two-seven { grid-column: 2 / 8; }
 
-	.one-seven { grid-column: 1 / 9; }
+	/* for three column images */
+	.one-four { grid-column: 1 / 5; }
 
-	.seven-nine { grid-column: 2 / 6; }
+	.four-seven { grid-column: 5 / 9; }
 
-	h3 { margin-top: 22px; }
+	.seven-ten { grid-column: 9 / 13; }
+	/* for three column images */
+
+	.two-eight, .ten-thirteen  { grid-column: 2 / 10; }
+
+	.work-text { margin-top: 22px; }
+
+	.one-ten { grid-column: 1 / 13; }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -148,22 +189,22 @@ h2 {
 		margin: 15px 0;
 	}
 
-	.seven-nine { grid-column: 2 / 8; }
+	.two-eight, .ten-thirteen  { grid-column: 2 / 12; }
 
+	.one-ten { grid-column: 1 / 13; }
 }
+
 
 @media only screen and (max-width: 600px) {
 	  body, h1 {
 	  	font-size: 16px;
 	}
 
-	.grid-eight-col {
+	.grid-twelve-col {
 		width: 90%;
 	}
 
-	.grid-eight-col > div {
-		grid-column: 1 / 9;
-	}
+	.two-eight, .ten-thirteen, .one-ten { grid-column: 1 / 13; }
 
 	.caption {
 		bottom: 36px;
@@ -183,51 +224,6 @@ h2 {
 		margin-bottom: 5%;
 	}
 }
-
-/* sticky / scroll animation 
-.andy, .hovey, .h, .a, .y2, .y1, .n, .d, .o {
-	position: sticky;
-	display: inline-block;
-	top: 15px;
-	vertical-align: top;
-	margin-bottom: 70px;
-	font-size: 18px;
-	letter-spacing: 2px;
-	margin-left: 0;
-	font-family: sohne-bold;
-}
-
-.a, .d {
-	margin-top: 40px;
-}
-
-.andy {
-	margin-top: 0px;
-}
-
-.o {
-	margin-top: 100px;
-}
-
-.h {
-	margin-top: 120px;
-}
-
-.y1 {
-	margin-top: 80px;
-}
-
-.y2 {
-	margin-top: 120px;
-}
-
-.hovey {
-	margin-top: 80px;
-}
- 
-.animation-wrapper {
-	top: 0;
-} */
 
 
 
