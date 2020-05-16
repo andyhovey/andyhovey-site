@@ -17,6 +17,12 @@ body {
 }
 
 @font-face {
+  	font-family: 'sohne-book-italic';
+  	src: url('../fonts/SohneWeb-MagerKursiv.woff2') format('woff2');
+  	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
+}
+
+@font-face {
   	font-family: 'tiempos-headline';
   	src: url('../fonts/TiemposHeadWeb-Semibold.woff') format('woff');
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
@@ -30,8 +36,16 @@ h1 {
 	margin: 3% 0 2% 0; 
 }
 
+em {
+	font-family: sohne-book-italic;
+}
+
 a {
 	color: #24231F;
+}
+
+.work-text a {
+	color: #ffffff;
 }
 
 h2 { 
@@ -62,7 +76,7 @@ h2 {
 	color: #6D6C69;
 	position: sticky;
 	top: 5%;
-	margin-bottom: 11%;
+	margin-bottom: 9.5%;
 }
 
 .contact-details h3 {
@@ -160,6 +174,14 @@ img {
 }
 
 /* responsive styles */
+
+@media screen and (min-width: 1500px) {
+
+	h2 {
+		font-size: 65px;
+	}
+
+}
 
 @media only screen and (max-width: 1100px) {
 
