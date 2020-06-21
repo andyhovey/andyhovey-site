@@ -34,6 +34,24 @@ body {
   	unicode-range: U+0020-007F; /* The bare minimum for the English Language */
 }
 
+
+/*.scrolling-images {
+  	overflow-x: scroll;
+  	overflow-y: hidden;
+  	white-space: nowrap;
+  	-webkit-overflow-scrolling: touch;
+}
+
+.scrolling-images div {
+  	display: inline-block;
+  	margin: 5% 0% 5% 5%;
+  	max-width: 200px;
+} */
+
+.test-scroll-images div:last-child, .scrolling-images div:last-child {
+	margin-right: 5%;
+}
+
 /* text styles */
 h1 {
 	font-weight: normal;
@@ -266,6 +284,8 @@ img {
 	}
 
 	.two-eight, .ten-thirteen, .one-ten { grid-column: 1 / 13; }
+
+	.one-four.image, .four-seven.image, .seven-ten.image { grid-column: 1 / 13; padding: 5% 10%; }
 
 	.caption {
 		bottom: 36px;
