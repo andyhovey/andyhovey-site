@@ -38,9 +38,23 @@ body {
 h1 {
 	font-weight: normal;
 	font-size: 23px;
-	padding-top: 17%;
-	margin: 3% 0 2% 0; 
+	margin: 0 0 15% 0; 
+	font-family: sohne-bold;
 }
+
+h2 { 
+	font-family: tiempos-headline;
+	font-size: 4.3vw;
+	line-height: 120%;
+	font-weight: normal;
+	margin: 0 0 4% 0;
+	padding: 0;
+ }
+
+h3 {
+ 	font-family: sohne-bold;
+ 	font-weight: normal;
+ }
 
 em {
 	font-family: sohne-book-italic;
@@ -54,14 +68,6 @@ a {
 	color: #ffffff;
 }
 
-h2 { 
-	font-family: tiempos-headline;
-	font-size: 4.3vw;
-	line-height: 120%;
-	font-weight: normal;
-	margin: 0 0 4% 0;
-	padding: 0;
- }
 
  .smaller-text, .smaller-text > * {
  	font-size: 16px;
@@ -76,10 +82,7 @@ h2 {
  	margin: 11px 0;
  }
 
- h3, h1 {
- 	font-family: sohne-bold;
- 	font-weight: normal;
- }
+ 
 
  .work-text h3 {
  	margin: -7px 0px 0px 0px;
@@ -226,8 +229,12 @@ img {
 
 	.one-ten { grid-column: 1 / 13; }
 
-	.small-hide {
-		display: none;
+	.small-hide { display: none; }
+
+	.contact-details {
+		border-left: none;
+    	padding-left: 0px;
+    	margin-top: 11px;
 	}
 
 }
