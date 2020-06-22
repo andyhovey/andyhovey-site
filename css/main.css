@@ -286,7 +286,7 @@ img {
 	}
 
 	.grid-twelve-col {
-		width: 86%;
+		width: 88%;
 	}
 
 	.two-eight, .ten-thirteen, .one-ten { grid-column: 1 / 13; }
