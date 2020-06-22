@@ -290,7 +290,7 @@ img {
 
 	.two-eight, .ten-thirteen, .one-ten { grid-column: 1 / 13; }
 
-	.one-four.image, .four-seven.image, .seven-ten.image { grid-column: 1 / 13; padding: 5% 0%; }
+	.one-four.image, .four-seven.image, .seven-ten.image { grid-column: 1 / 13; padding: 6% 0% 4% 0%; }
 
 	.seven-ten.image {
 		padding-bottom: 0;
