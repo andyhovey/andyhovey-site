@@ -146,20 +146,8 @@ ul, li {
  	margin: auto;
  }
 
- .blue {
- 	background: #37465C;
- }
-
- .dark-blue {
- 	background: #2C384A;
- }
-
- .light-blue {
- 	background: #317BA0;
- }
-
- .yellow {
- 	background: #252F3E;
+ .light-grey > *, .light-grey a {
+ 	color: #999;
  }
 
  .black {
