@@ -100,40 +100,6 @@ a {
  	margin: -7px 0px 0px 0px;
  }
 
-.contact-details {
-	border-left: 1px solid #D3C8B4;
-	padding-left: 15px;
-	color: #24231F;
-	position: sticky;
-	top: 5%;
-	margin-bottom: 9.5%;
-}
-
-.contact-details a {
-	color: #24231F;
-}
-
-.contact-details h3 {
-	margin: 17px 0;
-	line-height: 90%
-}
-
-.contact-details li {
-	line-height: 90%;
-	margin-bottom: 9px;
-}
-
-.contact-details li:last-child {
-	margin-bottom: 0;
-}
-
-
-ul, li {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
  /* text styles end */
  img {
  	width: 100%;
@@ -158,28 +124,32 @@ ul, li {
  	color: #fff;
  }
 
-.grid-twelve-col {
+.grid-four-col {
 	display: grid;
-	grid-template-columns: 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5%;
-    column-gap: 2%;
+	grid-template-columns: 22% 22% 22% 22%;
+    column-gap: 4%;
     width: 96%;
 	max-width: 1400px;
 	margin: auto;
+	background: #ccc;
 }
 
-/* for three column images */
-.one-four { grid-column: 1 / 4; }
+.one-two { grid-column: 1 / 2; padding: 0 6%; border-left: 1px solid red; height: 100%;}
 
-.four-seven { grid-column: 4 / 7; }
+.one-five { grid-column: 1 / 5; }
 
-.seven-ten { grid-column: 7 / 10; }
-/* for three column images */
+.two-three { grid-column: 2 / 3;}
 
-.one-ten { grid-column: 1 / 10; }  /* big images */
+.two-four { grid-column: 2 / 4; 
+padding: 0 3%;
+border-left: 1px solid red;
+border-right: 1px solid red;}
 
-.ten-thirteen { grid-column: 10 / 13; }  /* right column text */
+.three-four { grid-column: 3 / 4; }
 
-.two-eight { grid-column: 2 / 8; } /* left column text */
+.four-five { grid-column: 4 / 5; 
+padding: 0 3%;
+border-right: 1px solid red;}
 
 .five-vertical-padding {
 	padding: 5% 0%;
