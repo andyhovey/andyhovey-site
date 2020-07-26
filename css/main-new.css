@@ -40,7 +40,7 @@ h1 {
 
 h2 { 
 	font-family: tiempos-headline;
-	font-size: 3.1vw;
+	font-size: 3.2vw;
 	line-height: 120%;
 	font-weight: normal;
 	margin: 0 0 4% 0;
@@ -119,10 +119,6 @@ a {
  	padding-top: 12%;
  }
 
- .padding-medium {
-	padding: 2vw;
-}
-
  .black {
  	background: #000;
  }
@@ -141,11 +137,26 @@ a {
 }
 
 .one-two, .two-four, .four-five {
-	border-left: 1px solid rgba(0, 0, 0, .15);
-	padding: 0 2vw;
+	padding: 0 1.8vw;
 }
 
-.four-five {
+.one-two.image {
+	margin-right: -2vw; 
+}
+
+.four-five.image {
+	margin-left: -2vw; 
+}
+
+.image {
+	padding: 0 1.8vw 1.8vw 1.8vw;
+}
+
+.border-left {
+	border-left: 1px solid rgba(0, 0, 0, .15);
+}
+
+.border-right {
 	border-right: 1px solid rgba(0, 0, 0, .15);
 }
 
@@ -155,11 +166,13 @@ a {
 
 .two-three { grid-column: 2 / 3;}
 
-.two-four { grid-column: 2 / 4; }
+.two-four { grid-column: 2 / 4; margin: 0 -1.8vw; }
 
 .three-four { grid-column: 3 / 4; }
 
 .four-five { grid-column: 4 / 5; }
+
+.spacer-row { min-height: 2.5vw; }
 
 .six-vertical-padding {
 	padding: 6% 0%;
