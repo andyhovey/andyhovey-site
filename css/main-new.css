@@ -71,6 +71,18 @@ a {
 	text-decoration: none;
 }
 
+.top-section {
+	animation: bgcolour 15s infinite;
+}
+
+@keyframes bgcolour {
+	0% { background:#ff5254; }
+	25%{background:#27ae60; }
+	75%{background:#778beb;}
+	100% {background:#ff5254;}
+}
+
+
 .work-text a {
 	color: #ffffff;
 }
