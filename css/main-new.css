@@ -7,7 +7,7 @@ body {
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
-  	margin: 0;
+  	margin: 0 0 3vw 0;
 }
 
 @font-face {
@@ -151,10 +151,9 @@ a:hover {
 	display: grid;
 	grid-template-columns: 22% 22% 22% 22%;
     column-gap: 4%;
-    width: 96%;
-	max-width: 1400px;
+    width: 100%;
+	max-width: 1500px;
 	margin: auto;
-	border-radius: 4px;
 }
 
 .one-two, .two-four, .four-five {
@@ -170,15 +169,19 @@ a:hover {
 }
 
 .image {
-	padding: 0 2.8vw 1.8vw 2.8vw;
+	padding: 0 2.8vw 2.8vw 2.8vw;
 }
 
-.border-left {
-	border-left: 1px solid rgba(0, 0, 0, .15);
+.logo {
+	float: left;
+	padding: 1.5vw 0;
 }
 
-.border-right {
-	border-right: 1px solid rgba(0, 0, 0, .15);
+.logo img {
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .one-two { grid-column: 1 / 2; }
@@ -193,7 +196,7 @@ a:hover {
 
 .four-five { grid-column: 4 / 5; }
 
-.spacer-row { min-height: 2.5vw; }
+.spacer-row { min-height: 0vw; }
 
 .six-vertical-padding {
 	padding: 6% 0%;
@@ -205,7 +208,6 @@ a:hover {
 
 .padding-medium {
 	padding-top: 1.7vw;
-    padding-bottom: .3vw;
 }
  /* layout styles end */
 
@@ -217,11 +219,17 @@ img {
 
 /* responsive styles */
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
 
 	h2 {
 		font-size: 40px;
 	}
+
+	.grid-four-col {
+	max-width: 1500px;
+	margin: auto;
+	border-radius: 4px;
+}
 }
 
 @media only screen and (max-width: 1000px) {
