@@ -170,7 +170,11 @@ a {
 
 .logo {
 	float: left;
-	padding: 1.3vw 0 .2vw 0;
+	padding: 1.3vw 0 .7vw 0;
+}
+
+.logo-starboard {
+	width: 150px;
 }
 
 .border-bottom {
@@ -209,8 +213,6 @@ a {
 
  /* layout styles end */
 }
-
-
 
 img {
 	border-radius: 3px;
@@ -272,6 +274,26 @@ img {
 
 	.two-four.padding-medium {
 		padding-top: 0;
+	}
+
+	.logo {
+		padding: 1.3vw 0 3vw 0;
+	}
+
+	.logo-starboard {
+		width: 120px;
+	}
+
+	.logo-xero {
+		width: 60px;
+	}
+
+	.logo-wayward-riders {
+		width: 100px;
+	}
+
+	.image {
+		padding: 0 0 6.5vw 0;
 	}
 }
 
