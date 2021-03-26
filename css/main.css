@@ -300,6 +300,10 @@ img {
 		margin: 0 0 6vw 0;
 	}
 
+	.top-padding-large {
+		padding-top: 5%;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
