@@ -142,6 +142,10 @@ a {
  	color: #fff;
  }
 
+ .dark, .dark a {
+ 	color: #24231F;
+ }
+
  .half-opacity {
  	opacity: .6;
  }
