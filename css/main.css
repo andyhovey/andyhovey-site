@@ -251,11 +251,15 @@ img {
 	}
 
 	.grid-four-col {
-		max-width: 55%;
+		max-width: 60%;
 	}
 
 	h2 {
 		font-size: 24px;
+	}
+
+	.half-white {
+	 	opacity: 1;
 	}
 
 	.one-two, .two-four, .four-give {
