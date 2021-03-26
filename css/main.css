@@ -272,9 +272,9 @@ img {
 		grid-column: 1 / 5;
 	}
 
-	.top-padding-large {
-		padding-top: 3%;
-	}
+	.bottom-padding-large {
+    	padding-bottom: 13%;
+    }
 
 	.logo {
 		padding: 16px 0 20px 0;
