@@ -236,13 +236,26 @@ img {
 
 h1 {
 	font-family: heldane-italic;
-	font-size: 12vw;
-	margin: 24vh 0vh 24vh 0vh;
+	font-size: 10vw;
+	margin: 23vh 0vh 15vh 0vh;
 }
 
 .header-nav {
-	 border-bottom: 1px solid rgba(0, 0, 0, .1);
+	display: flex;
+	align-items: baseline;
+	flex-direction: column;
 }
+
+.photo-pages a {
+	text-decoration: none;
+	opacity: .6;
+	color: #24231F;
+}
+
+.header-nav a.selected {
+	font-family: heldane-italic;
+}
+
 
 
 /* photo pages styles */
