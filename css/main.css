@@ -226,6 +226,27 @@ img {
 	border-radius: 3px;
 }
 
+
+/* photo pages styles */
+
+@font-face {
+  	font-family: 'heldane-italic';
+  	src: url('../fonts/HeldaneDisplayWeb-RegularItalic.woff2') format('woff2');
+}
+
+h1 {
+	font-family: heldane-italic;
+	font-size: 12vw;
+	margin: 24vh 0vh 24vh 0vh;
+}
+
+.header-nav {
+	 border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+
+/* photo pages styles */
+
 /* responsive styles */
 
 @media screen and (min-width: 1600px) {
