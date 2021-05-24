@@ -234,10 +234,21 @@ img {
   	src: url('../fonts/HeldaneDisplayWeb-RegularItalic.woff2') format('woff2');
 }
 
-h1 {
+.heldane {
+	 font-family: 'heldane-italic';
+}
+
+.big-heldane h1 {
 	font-family: heldane-italic;
 	font-size: 10vw;
-	margin: 32vh 0vh 30vh 0vh;
+	line-height: 100%;
+	margin: 0 0 -24px 0;
+
+}
+
+.big-heldane {
+	display: grid;
+	align-items: flex-end;
 }
 
 .header-nav {
@@ -248,16 +259,21 @@ h1 {
 
 .photo-pages a {
 	text-decoration: none;
-	opacity: .6;
 	color: #24231F;
+	opacity: .6;
 }
 
-.header-nav a.selected {
-	font-family: heldane-italic;
+.header-nav a.heldane {
+	font-size: 110%;
 }
 
+.padding-huge {
+	margin-top: 150px;
+}
 
-
+a.selected {
+	text-decoration: underline;
+}
 /* photo pages styles */
 
 /* responsive styles */
@@ -337,6 +353,30 @@ h1 {
 	.top-padding-large {
 		padding-top: 5%;
 	}
+
+	/* photo pages styles */
+	.header-nav {
+		display: flex;
+		align-items: baseline;
+		flex-direction: row;
+		white-space: nowrap;
+		overflow: scroll;
+		max-width: 100%;
+	}
+
+	.header-nav a {
+		margin-right: 25px;
+	}
+
+	.padding-huge {
+		margin-top: 10%;
+	}
+
+	.big-heldane {
+		margin-top: 14%;
+	}
+	/* photo pages styles */
+
 
 }
 
