@@ -270,6 +270,10 @@ img {
 	flex-direction: column;
 }
 
+.header-nav a.nav-title {
+	width: 100%;
+}
+
 .photo-pages a {
 	text-decoration: none;
 	color: #24231F;
@@ -285,8 +289,9 @@ img {
 }
 
 a.selected {
-	text-decoration: underline;
+	opacity: 1;
 }
+
 /* photo pages styles */
 
 /* responsive styles */
