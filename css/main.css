@@ -234,6 +234,11 @@ img {
   	src: url('../fonts/HeldaneDisplayWeb-RegularItalic.woff2') format('woff2');
 }
 
+.photo-pages .grid-four-col {
+	max-width: 96%;	
+}
+
+
 .heldane {
 	 font-family: 'heldane-italic';
 }
