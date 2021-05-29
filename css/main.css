@@ -229,6 +229,10 @@ img {
 
 /* photo pages styles */
 
+.photo-pages {
+	padding: 40px; 
+}
+
 @font-face {
   	font-family: 'heldane-italic';
   	src: url('../fonts/HeldaneDisplayWeb-RegularItalic.woff2') format('woff2');
