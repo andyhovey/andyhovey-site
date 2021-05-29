@@ -235,7 +235,11 @@ img {
 }
 
 .photo-pages .grid-four-col {
-	max-width: 96%;	
+	max-width: 100%;
+}
+
+.photo-pages .padding-medium {
+	padding-top: 0;
 }
 
 
@@ -362,15 +366,12 @@ a.selected {
 	/* photo pages styles */
 	.header-nav {
 		display: flex;
-		align-items: baseline;
-		flex-direction: row;
-		white-space: nowrap;
-		overflow: scroll;
-		max-width: 100%;
+    	flex-direction: row;
+    	flex-wrap: wrap;
 	}
 
 	.header-nav a {
-		margin-right: 25px;
+		width: 33%;
 	}
 
 	.padding-huge {
