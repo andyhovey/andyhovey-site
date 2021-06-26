@@ -122,7 +122,7 @@ a {
  	margin: auto;
  }
 
- .light-grey > *, .light-grey a {
+ .light-grey > *, .light-grey a, .light-grey {
  	color: #999;
  }
 
@@ -181,7 +181,7 @@ a {
 }
 
 .border-bottom {
-	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .one-two { grid-column: 1 / 2; }
@@ -210,6 +210,10 @@ a {
 	padding: 2vw 0;
 }
 
+.padding-bottom {
+	padding-bottom: 2vw;
+}
+
 .image {
 	margin: 0 0 3.7vw 0;
 	padding: 0;
@@ -229,8 +233,17 @@ img {
 
 /* photo pages styles */
 
-.photo-pages {
-	padding: 40px; 
+.vertical-fit {
+	margin: auto;
+	padding-top: 2vw;
+}
+
+.vertical-fit img {
+	width: auto;
+    height: auto;
+	max-height: 93vh;
+	max-width: 90vw;
+	border-radius: 2px;
 }
 
 @font-face {
@@ -238,59 +251,52 @@ img {
   	src: url('../fonts/HeldaneDisplayWeb-RegularItalic.woff2') format('woff2');
 }
 
-.photo-pages .grid-four-col {
-	max-width: 100%;
-}
-
-.photo-pages .padding-medium {
-	padding-top: 0;
-}
-
-
 .heldane {
 	 font-family: 'heldane-italic';
 }
 
 .big-heldane h1 {
 	font-family: heldane-italic;
-	font-size: 10vw;
+	font-size: 9vw;
 	line-height: 100%;
-	margin: 0 0 -24px 0;
-
+	margin: 5vw 0 2vw 0;
 }
 
-.big-heldane {
-	display: grid;
-	align-items: flex-end;
-}
 
 .header-nav {
 	display: flex;
 	align-items: baseline;
-	flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 150%;
 }
 
-.header-nav a.nav-title {
-	width: 100%;
+.header-nav > * {
+		width: 33%;
 }
 
 .photo-pages a {
 	text-decoration: none;
-	color: #24231F;
-	opacity: .6;
+	color: #FF5353;
 }
+
+
+.full-width, .header-nav .full-width {
+	width: 100%;
+}
+
 
 .header-nav a.heldane {
 	font-size: 110%;
 }
 
-.padding-huge {
-	margin-top: 150px;
-}
-
 a.selected {
 	opacity: 1;
 }
+
+.two-five { grid-column: 2 / 5; }
+
 
 /* photo pages styles */
 
@@ -329,7 +335,7 @@ a.selected {
 	}
 
 	.grid-four-col {
-		max-width: 60%;
+		max-width: 65%;
 	}
 
 	h2 {
@@ -373,23 +379,29 @@ a.selected {
 	}
 
 	/* photo pages styles */
+
+	.photo-pages .grid-four-col {
+		max-width: 90%;
+	}
+
 	.header-nav {
 		display: flex;
     	flex-direction: row;
     	flex-wrap: wrap;
 	}
 
-	.header-nav a {
+	.one-two, .two-four, .four-five, .one-five {
+		grid-column: 1 / 5;
+	}
+
+	.header-nav > * {
 		width: 33%;
 	}
 
-	.padding-huge {
-		margin-top: 10%;
+	.big-heldane h1 {
+		font-size: 12vw;
 	}
 
-	.big-heldane {
-		margin-top: 14%;
-	}
 	/* photo pages styles */
 
 
@@ -398,14 +410,6 @@ a.selected {
 @media only screen and (max-width: 600px) {
 	.grid-four-col {
 		max-width: 88%;
-	}
-
-	.photo-pages .grid-four-col {
-		max-width: 100%;
-	}
-
-	.photo-pages {
-		padding: 20px;
 	}
 }
 
