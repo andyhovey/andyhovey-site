@@ -22,6 +22,8 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body class='photo-pages'>
 
@@ -29,14 +31,14 @@
   <div class='grid-four-col padding-medium border-bottom'>
     <div class='two-four'>
       <div class='header-nav'>
-        <div class='full-width'>Andy Hovey & Eileen Schwab cycling Photos</div>
+        <div class='full-width bottom-padding-medium '>Eileen & Andy cycling photos</div>
         <a href='/'>Aotearoa</a>
         <a href='/'>Argentina</a>
         <a href='/'>Bolivia</a>
         <a href='/'>Chile</a></li>
         <a href='/'>India</a>
         <a href='/'>Kazakhstan</a>
-        <div class='selected'>Kyrgyzstan</div>
+        <div class='selected light-grey'>Kyrgyzstan</div>
         <a href='/'>Nepal</a>
         <a href='/'>Peru</a>
         <a href='/'>Tajikstan</a>
@@ -83,87 +85,118 @@
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7240610.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
      <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7200505.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7180444.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7180453.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7160416.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7100347.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7160411.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7140379.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7100343.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7090316.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7050196.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
     <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7090249.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
-    <div class='grid-four-col padding-medium border-bottom'>
+    <div class='grid-four-col padding-medium'>
       <div class="one-five image vertical-fit">
          <img src="images/kyrgyzstan/P7050165.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
       </div>
     </div>
 
-</div>
+    <div class='grid-four-col padding-medium'>
+      <div class="one-five image vertical-fit">
+         <img src="images/kyrgyzstan/P7040164.jpg" alt="" class="">
+         <div class='smaller-text light-grey'>Caption details</div>
+      </div>
+    </div>
 
+    <div class='grid-four-col padding-medium border-bottom map-wrapper' id='map'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoieGVycmEiLCJhIjoiY2tid3MzYjNsMGFyZjJxcDdnZDVuZjQyMiJ9.0fCGWRkGFG9PsSqQ4wIQKQ';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/xerra/ckqd15gkj03ye18tgtagjcx67',
+      center: [75.696102, 41.862726],
+      zoom: 7
+      });
+      // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl());
+    </script>
+</div>
 <div class='grid-four-col'>
 
   <div class='two-four padding-medium'>
-    <p>Pedal over to <a href='https://www.linkedin.com/in/andy-hovey/' class='no-underline'>Tajikstan</a>.</p>
+    <p>Pedal over to <a href='https://www.linkedin.com/in/andy-hovey/' class='no-underline'>Tajikstan</a></p>
     </div>
 </div>
 
