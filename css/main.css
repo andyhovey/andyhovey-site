@@ -270,7 +270,7 @@ img {
 	font-family: heldane-italic;
 	font-size: 9vw;
 	line-height: 100%;
-	margin: 5vw 0 2vw 0;
+	margin: 6vw 0 3vw 0;
 }
 
 
@@ -279,8 +279,8 @@ img {
 	align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 16px;
-    line-height: 150%;
+    font-size: 15px;
+    line-height: 145%;
 }
 
 .header-nav > * {
@@ -415,12 +415,29 @@ a.selected {
 
 	/* photo pages styles */
 
-
 }
 
 @media only screen and (max-width: 600px) {
+	body,  {
+		font-size: 15px;
+		line-height: 145%;
+	}
+	
 	.grid-four-col {
 		max-width: 88%;
+	}
+
+	.padding-medium {
+		padding: 4vw 0;
+	}
+
+	.bottom-padding-medium {
+		padding-bottom: 2vw;
+	}
+
+	.big-heldane h1 {
+		font-size: 12vw;
+		margin: 16vw 0 10vw 0;
 	}
 }
 
