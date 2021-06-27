@@ -180,18 +180,22 @@
       </div>
     </div>
 
-    <div class='grid-four-col padding-medium border-bottom map-wrapper' id='map'></div>
-    <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoieGVycmEiLCJhIjoiY2tid3MzYjNsMGFyZjJxcDdnZDVuZjQyMiJ9.0fCGWRkGFG9PsSqQ4wIQKQ';
-      var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/xerra/ckqd15gkj03ye18tgtagjcx67',
-      center: [75.696102, 41.862726],
-      zoom: 7
-      });
-      // Add zoom and rotation controls to the map.
-      map.addControl(new mapboxgl.NavigationControl());
-    </script>
+    <div class='grid-four-col padding-medium border-bottom map-wrapper' id='map'>
+      <div class="one-five vertical-fit">
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoieGVycmEiLCJhIjoiY2tid3MzYjNsMGFyZjJxcDdnZDVuZjQyMiJ9.0fCGWRkGFG9PsSqQ4wIQKQ';
+          var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/xerra/ckqd15gkj03ye18tgtagjcx67',
+          center: [75.696102, 41.862726],
+          zoom: 7
+          });
+          // Add zoom and rotation controls to the map.
+          map.addControl(new mapboxgl.NavigationControl());
+        </script>
+      </div>
+    </div>
+
 </div>
 <div class='grid-four-col'>
 
