@@ -90,8 +90,7 @@ a {
 }
 
 .smaller-text, .smaller-text > * {
-	font-size: 16px;
-	line-height: 145%;
+	font-size: 15px;
 }
 
 .work-text {
@@ -122,7 +121,7 @@ a {
  	margin: auto;
  }
 
- .light-grey > *, .light-grey a, .light-grey {
+ .light-grey > *, .light-grey a, .light-grey, .photo-pages a.light-grey  {
  	color: #999;
  }
 
@@ -130,12 +129,16 @@ a {
  	padding-top: 4%;
  }
 
+ .top-padding-large {
+	margin-top: 10%;
+}
+
  .bottom-padding-large {
  	padding-bottom: 10%;
  }
 
  .bottom-padding-medium {
- 	padding-bottom: 1.3vw;
+ 	padding-bottom: 15px;
  }
 
  .black {
@@ -211,7 +214,7 @@ a {
 }
 
 .padding-medium {
-	padding: 2vw 0;
+	padding: 27px 0;
 }
 
 .padding-bottom {
@@ -266,13 +269,12 @@ img {
 	 font-family: 'heldane-italic';
 }
 
-.big-heldane h1 {
+.big-heldane h1, h1.big-heldane {
 	font-family: heldane-italic;
 	font-size: 9vw;
 	line-height: 100%;
 	margin: 6vw 0 3vw 0;
 }
-
 
 .header-nav {
 	display: flex;
@@ -280,11 +282,11 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 15px;
-    line-height: 145%;
+    line-height: 150%;
 }
 
 .header-nav > * {
-		width: 33%;
+		width: 33.33333%;
 }
 
 .photo-pages a {
@@ -304,6 +306,9 @@ img {
 
 a.selected {
 	opacity: 1;
+}
+
+a.selected span {
 }
 
 .two-five { grid-column: 2 / 5; }
@@ -437,7 +442,7 @@ a.selected {
 
 	.big-heldane h1 {
 		font-size: 12vw;
-		margin: 16vw 0 10vw 0;
+		margin: 17vw 0 10vw 0;
 	}
 }
 
