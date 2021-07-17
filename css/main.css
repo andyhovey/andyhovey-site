@@ -192,10 +192,6 @@ p:first-child {
 
 .four-five { grid-column: 4 / 5; }
 
-.top-padding-small {
-	padding-top: 25px;
-}
-
 .padding-medium {
 	padding: 50px 0;
 }
@@ -203,16 +199,17 @@ p:first-child {
 .top-padding-medium {
 	padding-top: 50px;
 }
+
+.bottom-padding-medium {
+	padding-bottom: 50px;
+}
+
 .padding-small {
 	padding: 30px 0;
 }
 
-.top-padding-small, .padding-medium.top-padding-small {
+.top-padding-small {
 	padding-top: 30px;
-}
-
-.padding-bottom {
-	padding-bottom: 2vw;
 }
 
 .image {
@@ -384,7 +381,19 @@ a.selected span {
 		font-size: 15px;
 		line-height: 145%;
 	}
-	
+
+	.padding-medium {
+		padding: 6% 0;
+	}
+
+	.top-padding-medium, .top-padding-small {
+		padding-top: 6%;
+	}
+
+	.bottom-padding-medium {
+		padding-bottom: 6%;
+	}
+
 	.grid-four-col {
 		max-width: 88%;
 	}
