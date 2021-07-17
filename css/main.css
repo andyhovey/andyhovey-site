@@ -82,7 +82,7 @@ p:first-child {
 	text-decoration: none;
 }
 
-.smaller-text, .smaller-text > * {
+.smaller-text, .smaller-text > *, .photo-pages p.smaller-text {
 	font-size: 15px;
 }
 
@@ -200,6 +200,10 @@ p:first-child {
 	padding-top: 50px;
 }
 
+.top-padding-large {
+	padding-top: 140px;
+}
+
 .bottom-padding-medium {
 	padding-bottom: 50px;
 }
@@ -234,6 +238,11 @@ img {
 	margin: auto;
 }
 
+.photo-pages p {
+	font-size: 18px;
+	line-height: 150%;
+}
+
 .map-wrapper {
 	height: 600px;
 	border-radius: 4px;
@@ -258,7 +267,7 @@ img {
 	 font-family: 'heldane-italic';
 }
 
-.big-heldane h1, h1.big-heldane {
+.big-heldane {
 	font-family: heldane-italic;
 	font-size: 5vw;
 	line-height: 100%;
@@ -301,18 +310,6 @@ a.selected span {
 .baseline-align {
 	align-self: end;
 }
-
-
-/* photo pages styles */
-
-/* responsive styles */
-
-/*@media screen and (min-width: 1600px) {
-
-	.big-heldane h1 {
-		font-size: 130px;
-	}
-}*/
 
 @media only screen and (max-width: 1400px) {
 
