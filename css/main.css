@@ -374,23 +374,23 @@ a.selected span {
 	}
 
     .block-title  { 
-    	padding-bottom: 6%;
+    	padding-bottom: 5%;
     }
 
 	.padding-medium, .padding-small {
-		padding: 6% 0;
+		padding: 5% 0;
 	}
 
 	.top-padding-medium, .top-padding-small {
-		padding-top: 6%;
+		padding-top: 5%;
 	}
 
 	.bottom-padding-medium {
-		padding-bottom: 6%;
+		padding-bottom: 5%;
 	}
 
 	.grid-four-col {
-		max-width: 88%;
+		max-width: 90%;
 	}
 
 	.image {
