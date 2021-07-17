@@ -1,7 +1,7 @@
 body {
 	background: #f3f1f0;
 	color: #111;
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 145%;
 	font-family: "sohne-book", helvetica, arial, sans-serif;
 	font-weight: normal;
@@ -238,11 +238,6 @@ img {
 	margin: auto;
 }
 
-.photo-pages p {
-	font-size: 18px;
-	line-height: 150%;
-}
-
 .map-wrapper {
 	height: 600px;
 	border-radius: 4px;
@@ -382,7 +377,7 @@ a.selected span {
     	padding-bottom: 6%;
     }
 
-	.padding-medium {
+	.padding-medium, .padding-small {
 		padding: 6% 0;
 	}
 
@@ -396,6 +391,10 @@ a.selected span {
 
 	.grid-four-col {
 		max-width: 88%;
+	}
+
+	.image {
+		padding-bottom: 0;
 	}
 
 	h1.big-heldane {
