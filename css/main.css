@@ -213,8 +213,7 @@ p:first-child {
 }
 
 .image {
-	margin: 0 0 57px 0;
-	padding: 0;
+	padding: 0 0 57px 0; /* optically align it with text */
 }
 
 .image img {
@@ -351,19 +350,15 @@ a.selected span {
 	}
 
 	.logo-starboard {
-		width: 160px;
-	}
-
-	.logo-xero {
-		width: 80px;
-	}
-
-	.logo-wayward-riders {
 		width: 140px;
 	}
 
-	.image {
-		margin: 0 0 6vw 0;
+	.logo-xero {
+		width: 60px;
+	}
+
+	.logo-wayward-riders {
+		width: 120px;
 	}
 
 	/* photo pages styles */
@@ -381,6 +376,14 @@ a.selected span {
 		font-size: 15px;
 		line-height: 145%;
 	}
+
+	.bottom-padding-large {
+    	padding-bottom: 12%;
+	}
+
+    .block-title  { 
+    	padding-bottom: 6%;
+    }
 
 	.padding-medium {
 		padding: 6% 0;
