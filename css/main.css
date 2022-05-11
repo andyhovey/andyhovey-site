@@ -1,5 +1,5 @@
 body {
-	background: #f3f1f0;
+	background: #F9F8F6;
 	color: #111;
 	font-size: 18px;
 	line-height: 145%;
@@ -304,6 +304,13 @@ a.selected span {
 
 .baseline-align {
 	align-self: end;
+}
+
+@media only screen and (max-width: 2000px) {
+
+	h2 {
+		font-size: 42px;
+	}
 }
 
 @media only screen and (max-width: 1400px) {
