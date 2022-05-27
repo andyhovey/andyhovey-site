@@ -329,7 +329,7 @@ a.selected span {
 
 @media only screen and (max-width: 1100px) {
 	body {
-	  	font-size: 16px;
+	  	/* font-size: 16px; */
 	}
 
 	.grid-four-col {
@@ -377,15 +377,19 @@ a.selected span {
 	}
 
 	.bottom-padding-large {
-    	padding-bottom: 12%;
+    	padding-bottom: 20%;
+	}
+
+	.bottom-padding-large-small-screen {
+		padding-bottom: 20%;
 	}
 
     .block-title  { 
-    	padding-bottom: 5%;
+    	padding-bottom: 6%;
     }
 
 	.padding-medium, .padding-small {
-		padding: 5% 0;
+		padding: 6% 0;
 	}
 
 	.top-padding-medium, .top-padding-small {
@@ -397,16 +401,20 @@ a.selected span {
 	}
 
 	.grid-four-col {
-		max-width: 90%;
+		max-width: 88%;
 	}
 
 	.image {
-		padding-bottom: 5%;
+		padding-bottom: 6%;
 	}
 
 	h1.big-heldane {
 		font-size: 12vw;
 
+	}
+
+	.intro-block {
+		padding-bottom: 25%;
 	}
 }
 
