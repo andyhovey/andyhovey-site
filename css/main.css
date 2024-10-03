@@ -105,7 +105,7 @@ p:first-child {
  /* text styles end */
  img {
  	width: 100%;
- 	border-radius: 4px;
+ 	border-radius: 8px;
  }
 
  .border-top {
@@ -143,7 +143,7 @@ p:first-child {
  }
 
  .half-opacity {
- 	opacity: .6;
+ 	opacity: 1;
  }
 
 .grid-four-col {
